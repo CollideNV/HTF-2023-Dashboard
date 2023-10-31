@@ -2,7 +2,7 @@
 import styles from './BriefingText.module.scss'
 
 const BriefingText = () => ( <div className={styles.BriefingText}>
-        <h1>Briefing Collide Jungle Institute</h1>
+        <h1>Briefing - Collide Jungle Institute</h1>
 <p>In de schaduw van een dreiging die de toekomst van ontelbare dier- en plantensoorten verduistert, roepen wij een gloednieuwe generatie digitale pioniers en ecologische avonturiers op om zich aan te sluiten bij het CJI. Dit instituut is ons antwoord op de roep van de wildernis, een hoopvolle oase in een wereld vol uitdagingen, waar we koesteren wat de natuur ons schenkt en streven naar het behoud van haar schatten. Samen gaan we op een epische reis om de prachtige flora en fauna van de jungle te koesteren en te beschermen.</p>
 <p>Met de kracht van fullstack technologieën, ontsluit je geheime toegang tot vergeten API-tools. Maar, wees gewaarschuwd, niet alle van deze digitale gereedschappen zijn even trefzeker. Samen met je moedige metgezellen, ontsluit je de poorten naar creativiteit en smeed je gloednieuwe API-tools om de onontgonnen paden van de digitale jungle te effenen, terwijl je de vergeten handleiding herschrijft en verbetert. Hier in deze spannende digitale wildernis, waar code de taal is en avontuur wacht bij elke regel, zijn jullie de moderne ontdekkingsreizigers die de digitale horizon verbreden.</p>
 <h2>TL;DR</h2>

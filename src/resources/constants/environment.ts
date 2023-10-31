@@ -6,8 +6,8 @@ const {
 
 export default {
     dashboard_api: {
-        http: REACT_APP_DASHBOARD_API_URL!,
-        websocket: REACT_APP_DASHBOARD_WEBSOCKET_URL!
+        http: REACT_APP_DASHBOARD_API_URL! ?? "http://htf.awqt.be",
+        websocket: REACT_APP_DASHBOARD_WEBSOCKET_URL! ?? "ws://htf.awqt.be"
     },
     deadline: REACT_APP_DEADLINE ?? '2023-11-09T16:00:00'
 }
