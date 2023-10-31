@@ -35,7 +35,7 @@ const DashboardBadge = ({
 
     return (
         <div className={styles.DashboardBadge} data-testid={dataTestId}>
-            <img src={renderBadge(type)} className={styles.svgBadge} />
+            <img src={renderBadge(type)} className={styles.svgBadge} alt="badge" />
         </div>
     )
 }
