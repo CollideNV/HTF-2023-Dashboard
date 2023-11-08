@@ -7,8 +7,8 @@ const {
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   dashboard_api: {
-    http: REACT_APP_DASHBOARD_API_URL! ?? "https://htf.collide.be",
-    websocket: REACT_APP_DASHBOARD_WEBSOCKET_URL! ?? "wss://htf.collide.be"
+    http: "https://htf.collide.be",
+    websocket: "wss://htf.collide.be",
   },
   deadline: REACT_APP_DEADLINE ?? "2023-11-09T16:00:00",
 };
