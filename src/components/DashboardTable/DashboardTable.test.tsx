@@ -19,7 +19,7 @@ const mockTeams: Team[] = [
         name: 'Team A',
         problems: [
             {
-                badgeUrl: BadgeType.FLOOD_BADGE,
+                badgeUrl: BadgeType.SHELTER_BADGE,
                 description: '',
                 name: 'Flood',
                 score: 10,
@@ -55,7 +55,7 @@ const mockTeams: Team[] = [
                 ]
             },
             {
-                badgeUrl: BadgeType.DROUGHT_BADGE,
+                badgeUrl: BadgeType.NAVIGATION_BADGE,
                 description: '',
                 name: 'Drought',
                 score: 10,
@@ -133,7 +133,7 @@ const mockTeams: Team[] = [
         name: 'Team B',
         problems: [
             {
-                badgeUrl: BadgeType.FLOOD_BADGE,
+                badgeUrl: BadgeType.SHELTER_BADGE,
                 description: '',
                 name: 'Flood',
                 score: 10,
@@ -169,7 +169,7 @@ const mockTeams: Team[] = [
                 ]
             },
             {
-                badgeUrl: BadgeType.DROUGHT_BADGE,
+                badgeUrl: BadgeType.NAVIGATION_BADGE,
                 description: '',
                 name: 'Drought',
                 score: 10,
@@ -247,7 +247,7 @@ const mockTeams: Team[] = [
         name: 'Team C',
         problems: [
             {
-                badgeUrl: BadgeType.FLOOD_BADGE,
+                badgeUrl: BadgeType.SHELTER_BADGE,
                 description: '',
                 name: 'Flood',
                 score: 10,
@@ -283,7 +283,7 @@ const mockTeams: Team[] = [
                 ]
             },
             {
-                badgeUrl: BadgeType.DROUGHT_BADGE,
+                badgeUrl: BadgeType.NAVIGATION_BADGE,
                 description: '',
                 name: 'Drought',
                 score: 10,
