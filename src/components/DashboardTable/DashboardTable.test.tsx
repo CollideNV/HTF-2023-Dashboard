@@ -91,7 +91,7 @@ const mockTeams: Team[] = [
                 ]
             },
             {
-                badgeUrl: BadgeType.IMPACT_BADGE,
+                badgeUrl: BadgeType.WILDLIFE_BADGE,
                 description: '',
                 name: 'Meteor Impact',
                 score: 10,
@@ -205,7 +205,7 @@ const mockTeams: Team[] = [
                 ]
             },
             {
-                badgeUrl: BadgeType.IMPACT_BADGE,
+                badgeUrl: BadgeType.WILDLIFE_BADGE,
                 description: '',
                 name: 'Meteor Impact',
                 score: 10,
@@ -319,7 +319,7 @@ const mockTeams: Team[] = [
                 ]
             },
             {
-                badgeUrl: BadgeType.IMPACT_BADGE,
+                badgeUrl: BadgeType.WILDLIFE_BADGE,
                 description: '',
                 name: 'Meteor Impact',
                 score: 10,
