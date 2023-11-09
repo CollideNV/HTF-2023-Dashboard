@@ -15,6 +15,9 @@ import { API_ROUTES } from "../../resources/constants/api-constants";
 import environment from "../../resources/constants/environment";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { Team } from "../../types/Team";
+import { Problem } from "../../types/Problem";
+import { Tool } from "../../types/Tool";
 
 const modalStyle = {
   position: "absolute",
@@ -84,7 +87,21 @@ const DashboardPage: FC = () => {
   const getFilteredTeams = useMemo(() => {
     if (!isSuccess || !data) return [];
 
-    return data
+    let updatedData: Team[] = [];
+    (data as Team[]).forEach((team: Team) => {
+      let teamScore: number = 0;
+      team.problems.forEach((problem: Problem) => {
+        problem.tools.forEach((tool: Tool) => {
+          if (tool.solved === true) {
+            teamScore += tool.difficulty;
+          }
+        });
+      });
+      const updatedTeam: Team = { ...team, score: teamScore };
+      updatedData.push(updatedTeam);
+    });
+
+    return updatedData
       .filter((team) => team.problems.length > 0)
       .sort((a, b) => b.score - a.score);
   }, [data, isSuccess]);
