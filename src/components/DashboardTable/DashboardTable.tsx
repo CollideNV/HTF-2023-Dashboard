@@ -35,9 +35,9 @@ const DashboardTable: FC<DashboardTableProps> = ({
 
     return (
       <>
-        <TableCell className={styles.tableHeaderCell}>
+        {/* <TableCell className={styles.tableHeaderCell}>
           <span className={styles.tableHeaderText}>Rank</span>
-        </TableCell>
+        </TableCell> */}
         <TableCell className={styles.tableHeaderCell}>
           <span className={styles.tableHeaderText}>Team</span>
         </TableCell>
@@ -113,21 +113,21 @@ const DashboardTable: FC<DashboardTableProps> = ({
 
   const RenderTableRow = useCallback(
     (index: number, team: Team) => {
-      // let teamScore: number = 0;
+      let teamScore: number = 0;
 
-      // team.problems.forEach((problem: Problem) => {
-      //   problem.tools.forEach((tool: Tool) => {
-      //     if (tool.solved === true) {
-      //       teamScore += tool.difficulty;
-      //     }
-      //   });
-      // });
+      team.problems.forEach((problem: Problem) => {
+        problem.tools.forEach((tool: Tool) => {
+          if (tool.solved === true) {
+            teamScore += tool.difficulty;
+          }
+        });
+      });
 
       return (
         <TableRow>
-          <TableCell className={styles.tableCell}>
+          {/* <TableCell className={styles.tableCell}>
             <span className={styles.collideText}>{index + 1}.</span>
-          </TableCell>
+          </TableCell> */}
           <TableCell className={styles.tableCell}>
             <span className={styles.teamText}>{team.name}</span>
           </TableCell>
@@ -139,7 +139,7 @@ const DashboardTable: FC<DashboardTableProps> = ({
             );
           })}
           <TableCell className={styles.tableCell}>
-            <span className={styles.collideText}>{team.score}</span>
+            <span className={styles.collideText}>{teamScore}</span>
           </TableCell>
         </TableRow>
       );
